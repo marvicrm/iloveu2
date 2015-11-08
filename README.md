@@ -7,7 +7,7 @@ Please keep in mind that vbscript only works on Windows
 1. Create a copy on desktop (hidden+system attributes)
 2. Create a fake google chrome shortcut (which opens the malware itself and google chrome)
 3. Create an infinite loop and sleep for every 10 seconds. wait for an available drive (removeable & fixed drive to copy itself)
-4. Create an autorun.inf (autorun.inf triggers the computer to run the malware once flashdrive is connected)
+4. Create an autorun.inf (autorun.inf triggers the computer to execute the malware once flashdrive is connected)
 5. Create 4 different shortcut folders on removeable/fixed drive with a tempting name (thus ordinary user may tempt to open it)
  
 <b>How to stop its execution</b>
