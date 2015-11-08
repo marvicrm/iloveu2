@@ -8,11 +8,11 @@ Please keep in mind that vbscript only works on Windows
 2. Create a fake google chrome shortcut (which opens the malware itself and google chrome)
 3. Create an infinite loop and sleep for every 10 seconds. wait for an available drive (removeable & fixed drive to copy itself)
 4. Create an autorun.inf (autorun.inf triggers the computer to run the malware once flashdrive is connected)
-5. Create 4 different shortcut folders with a tempting name (thus ordinary user may tempt to open it)
+5. Create 4 different shortcut folders on removeable/fixed drive with a tempting name (thus ordinary user may tempt to open it)
  
 <b>How to stop its execution</b>
 
-This program does not run on startup thus it is easy to remove. Here are the following steps to remove it
+This program does not run on startup thus, it is easy to remove. Here are the following steps to remove it
 
 1. Look for task manager, and find the "wscript.exe" and kill it
 2. Open folder options, show the hidden files
