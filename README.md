@@ -14,7 +14,7 @@ Please keep in mind that vbscript only works on Windows
 
 This program does not run on startup thus, it is easy to remove. Here are the following steps to remove it
 
-1. Look for task manager, and find the "wscript.exe" and kill it
+1. Open your task manager, and find the "wscript.exe" and kill it
 2. Open folder options, show the hidden files
 3. Delete the google chrome shortcut and the malware itself (iloveu2.vbs)
 
