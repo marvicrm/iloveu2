@@ -1,5 +1,5 @@
 # iloveu2
-This is a self-replicated vbscript program. I created this code to a the better understanding how a malware works
+This is a self-replicated vbscript program. I created this code to a better understanding how a malware works
 Please keep in mind that vbscript only works on Windows
 
 <b>What this code does?</b>
@@ -14,4 +14,5 @@ Please keep in mind that vbscript only works on Windows
 This program does not run on startup thus it is easy to remove. Here are the following steps to remove it
 
 1. Look for task manager, and find the "wscript.exe" and kill it
-2. Delete the google chrome shortcut and the malware itself (iloveu2.vbs)
+2. Open folder options, show the hidden files
+3. Delete the google chrome shortcut and the malware itself (iloveu2.vbs)
