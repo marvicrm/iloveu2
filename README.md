@@ -1,5 +1,5 @@
 # iloveu2
-This is a self-replicating vbscript program. I created this code to have a better understanding how a malware works
+This is a self-replicating vbscript program. I created this code to have a better understanding how a malware works.
 Please keep in mind that vbscript only works on Windows
 
 <b>What this code does?</b>
