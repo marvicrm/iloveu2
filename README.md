@@ -2,7 +2,7 @@
 This is a self-replicating vbscript program. I created this code to have a better understanding how a malware works.
 Please keep in mind that vbscript only works on Windows
 
-<b>What this code does?</b>
+<b>What this code do?</b>
 
 1. Create a copy on desktop (hidden+system attributes)
 2. Create a fake google chrome shortcut (which opens the malware itself and google chrome)
